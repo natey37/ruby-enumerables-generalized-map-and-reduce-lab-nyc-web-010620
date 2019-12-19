@@ -11,17 +11,15 @@ def map(array)
 end 
 
 def reduce(array, starting_value = nil)
-  total = 0 
+  
   index = 0 
+  if starting_value
+    
   while index < array.count do 
     total += yield(array[index])
     index += 1 
   end 
   
-  if starting_value = nil 
-    return total 
-  else 
-    return starting_value + total
-  end 
+  
 end 
   
