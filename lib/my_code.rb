@@ -18,5 +18,5 @@ def reduce(array, starting_value = nil)
     index += 1 
   end 
   
-  if starting_value =
+  
   
