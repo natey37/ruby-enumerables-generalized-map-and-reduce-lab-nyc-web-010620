@@ -18,5 +18,6 @@ def reduce(array, starting_value = nil)
     index += 1 
   end 
   
-  !!starting_value == true ? total+starting_value:
+  !!starting_value == true ? total+starting_value : total
+end 
   
