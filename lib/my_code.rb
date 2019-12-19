@@ -18,6 +18,10 @@ def reduce(array, starting_value = nil)
     index += 1 
   end 
   
-  !!starting_value == true ? total : total + starting_value
+  if starting_value = nil 
+    return total 
+  else 
+    return starting_value + total
+  end 
 end 
   
