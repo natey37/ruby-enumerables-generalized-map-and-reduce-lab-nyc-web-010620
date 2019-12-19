@@ -4,4 +4,4 @@ def map(array)
   index = 0 
   
   while index < array.count do 
-    
+    new_array << yield 
