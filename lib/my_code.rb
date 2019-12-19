@@ -12,8 +12,19 @@ end
 
 def reduce(array, starting_value = nil)
   
-  index = 0 
   if starting_value
+    sum = starting_value
+    index = 0 
+  else 
+    sum = array[0]
+    index = 1 
+  end 
+   
+  while index < array.count do 
+    sum = yield(sum, array[index])
+    index += 1 
+  end 
+  
     
   while index < array.count do 
     total += yield(array[index])
