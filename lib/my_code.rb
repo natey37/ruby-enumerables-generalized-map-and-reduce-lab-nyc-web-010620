@@ -4,4 +4,15 @@ def map(array)
   index = 0 
   
   while index < array.count do 
-    new_array << yield 
+    new_array << yield(array(index))
+    index += 1 
+  end 
+  new_array
+end 
+
+def reduce(array, starting_value = nil)
+  total = 0 
+  index = 0 
+  while index < array.count do 
+    total += yield(array(index))
+  
