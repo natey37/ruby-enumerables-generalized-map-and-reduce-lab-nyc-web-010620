@@ -1,6 +1,6 @@
 # Your Code Here
 def map(array)
-  new_array = 0 
+  new_array = [] 
   index = 0 
   
   while index < array.count do 
